@@ -1,4 +1,4 @@
-# streamlit-sanbod
+# streamlit-sanbox
 
 ## Set up environment (Create virtual environment)
 ```
