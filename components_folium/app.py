@@ -23,7 +23,7 @@ st.set_page_config(
 # Sidebar menu
 with st.sidebar:
     selected = option_menu(
-        menu_title="Menu Menu",
+        menu_title="Main Menu",
         options=["Marker/MarkerCluster Example", "GeoJson Example"],
     )
 
@@ -52,10 +52,10 @@ if selected == "Marker/MarkerCluster Example":
                 )
             return data
 
-    data = read_csv_data(datafile1)
     map1 = folium.Map(location=[49.255, -123.13], zoom_start=12)
     marker_cluster = plugins.MarkerCluster().add_to(map1)
 
+    data = read_csv_data(datafile1)
     for station in data:
         location = [station["latitude"], station["longitude"]]
         folium.Marker(
