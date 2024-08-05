@@ -42,7 +42,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 [Library path installed in your virtual environment]
 >>> 
 ```
-
+* Also, make sure that the Python interpreter configured to run Python scripts in VSCode is that of the virtual environment.
 
 
 ## Run application
